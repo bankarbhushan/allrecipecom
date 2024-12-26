@@ -37,7 +37,7 @@ const Category = () => {
           {/* Check if categories are available */}
           {category.length > 0 ? (
             // Display each category item, limited to 5 items
-            category.slice(0, 5).map((item) => (
+            category.slice(0, 20).map((item) => (
               <NavLink
                 key={item.idCategory}
                 to={`/category/${item.idCategory}`}

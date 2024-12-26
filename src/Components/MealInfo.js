@@ -140,7 +140,7 @@ const MealInfo = () => {
         <SimmerEffect />
       ) : mealInfo ? (
         // Show meal information if data is available
-        <div className="bg-white p-8 rounded-lg shadow-lg max-w-xl w-full">
+        <div className="bg-white p-8 rounded-lg shadow-lg w-[80vw]">
           {/* Meal Title with Home Icon */}
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
             {mealInfo.strMeal}
@@ -158,7 +158,7 @@ const MealInfo = () => {
             <img
               src={mealInfo.strMealThumb}
               alt={mealInfo.strMeal}
-              className="w-full h-80 object-cover rounded-lg shadow-md"
+              className="w-full h-96 object-cover rounded-lg shadow-md"
             />
           </div>
 
@@ -168,29 +168,30 @@ const MealInfo = () => {
             <p>{mealInfo.strInstructions}</p>
           </div>
 
-          {/* Meal Ingredients */}
-          <div className="text-gray-700 mb-6">
-            <h3 className="text-2xl font-semibold mb-4">Ingredients</h3>
-            <ul className="list-disc pl-6">{renderIngredients()}</ul>
-          </div>
-
-          {/* Video Instructions */}
-          {mealInfo.strYoutube && (
-            <div className="mb-6">
-              <h3 className="text-2xl font-semibold mb-4">
-                Video Instructions
-              </h3>
-              <iframe
-                width="full"
-                height="200"
-                src={mealInfo.strYoutube.replace("watch?v=", "embed/")}
-                title="Meal Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+          <div className="flex justify-around gap-7 ">
+            <div className="text-gray-700 mb-6">
+              <h3 className="text-2xl font-semibold mb-4">Ingredients</h3>
+              <ul className="list-disc pl-6">{renderIngredients()}</ul>
             </div>
-          )}
+
+            {/* Video Instructions */}
+            {mealInfo.strYoutube && (
+              <div className="mb-6">
+                <h3 className="text-2xl font-semibold mb-4">
+                  Video Instructions
+                </h3>
+                <iframe
+                  width="full"
+                  height="300"
+                  src={mealInfo.strYoutube.replace("watch?v=", "embed/")}
+                  title="Meal Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            )}
+          </div>
 
           {/* Recipe Source */}
           {mealInfo.strSource && (
