@@ -4,8 +4,7 @@ export const allCardApi = async (search, setData) => {
     const response = await fetch(
       `https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`
     );
-    {
-    }
+
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }

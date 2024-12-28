@@ -1,8 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { allCardApi } from "../api/api";
 
 const Search = ({ setData, setMsg, searchInput, setSearchInput }) => {
   const [search, setSearch] = useState(""); // Local search state
+
+  // Memoize getData to avoid re-creating the function on every render
+  const getData = useCallback(
+    async (term = search) => {
+      if (term.trim() === "") {
+        setMsg("Please Enter Something"); // Show message if search is empty
+        setData(null); // Clear any previous results
+      } else {
+        setMsg(""); // Clear error message
+        await allCardApi(term, setData); // Call API with the search term
+      }
+    },
+    [search, setData, setMsg]
+  ); // Dependencies for getData
 
   // Update local state whenever the parent updates the searchInput
   useEffect(() => {
@@ -10,23 +24,12 @@ const Search = ({ setData, setMsg, searchInput, setSearchInput }) => {
       setSearch(searchInput);
       getData(searchInput); // Automatically fetch data when searchInput changes
     }
-  }, [searchInput]);
+  }, [searchInput, getData]); // Add getData as a dependency
 
   // Function to handle input changes locally
   const handleInput = (event) => {
     setSearch(event.target.value); // Update local search term
     setSearchInput(event.target.value); // Update parent searchInput state
-  };
-
-  // Function to fetch data based on the search term
-  const getData = async (term = search) => {
-    if (term.trim() === "") {
-      setMsg("Please Enter Something"); // Show message if search is empty
-      setData(null); // Clear any previous results
-    } else {
-      setMsg(""); // Clear error message
-      await allCardApi(term, setData); // Call API with the search term
-    }
   };
 
   return (

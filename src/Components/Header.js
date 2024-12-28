@@ -5,7 +5,7 @@ import LogoutButton from "./LogoutButton";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = () => {
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated } = useAuth0();
 
   return (
     <div className="bg-slate-200 shadow-lg">

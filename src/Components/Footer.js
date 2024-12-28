@@ -11,9 +11,7 @@ const Footer = () => {
             <a href="/" className="hover:underline">
               Home
             </a>
-            <a href="#" className="hover:underline">
-              Recipes
-            </a>
+
             <a href="http://localhost:3002/about" className="hover:underline">
               About Us
             </a>

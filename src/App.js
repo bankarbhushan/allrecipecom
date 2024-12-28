@@ -4,7 +4,6 @@ import MainPage from "./Components/MainPage";
 import MealInfo from "./Components/MealInfo";
 import CategoryInfo from "./Components/CategoryInfo";
 import Header from "./Components/Header";
-import Error from "./Components/Error";
 import AboutUs from "./Components/AboutUs";
 import Footer from "./Components/Footer";
 import ContactUs from "./Components/Contact";

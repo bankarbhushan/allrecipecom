@@ -4,7 +4,6 @@ import Category from "./Category";
 import Search from "./Search";
 import About from "./About";
 import ChefUI from "./CefUI";
-import Footer from "./Footer";
 import LatterSearchButton from "./LatterSearchButton";
 
 const MainPage = () => {
