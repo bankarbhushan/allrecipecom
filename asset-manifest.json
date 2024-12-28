@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/recipe/static/css/main.4f9b99a7.css",
+    "main.js": "/recipe/static/js/main.834153a0.js",
+    "static/media/unpleased-young-male-cook-wearing-chef-uniform-glasses-holding-salad-carrot-isolated-yellow-wall.jpg": "/recipe/static/media/unpleased-young-male-cook-wearing-chef-uniform-glasses-holding-salad-carrot-isolated-yellow-wall.d1990c3cf408507138ec.jpg",
+    "static/media/74494.jpg": "/recipe/static/media/74494.4a8fb61a83da440efbaf.jpg",
+    "static/media/Screenshot 2024-12-25 000819.png": "/recipe/static/media/Screenshot 2024-12-25 000819.73f74b586f2866d43041.png",
+    "static/media/5501395_2871541.jpg": "/recipe/static/media/5501395_2871541.0bd788226781011686d6.jpg",
+    "static/media/istockphoto-678603482-612x612-removebg-preview.png": "/recipe/static/media/istockphoto-678603482-612x612-removebg-preview.d4bd7b9cd545ce215101.png",
+    "static/media/logo_recipe-removebg-preview.png": "/recipe/static/media/logo_recipe-removebg-preview.4bf0d8bafa4b289e93f6.png",
+    "index.html": "/recipe/index.html",
+    "main.4f9b99a7.css.map": "/recipe/static/css/main.4f9b99a7.css.map",
+    "main.834153a0.js.map": "/recipe/static/js/main.834153a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f9b99a7.css",
+    "static/js/main.834153a0.js"
+  ]
+}
