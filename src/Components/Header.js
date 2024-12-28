@@ -50,6 +50,20 @@ const Header = () => {
             </NavLink>
           </li>
 
+          <li>
+            <NavLink
+              to="/contactus" // Link to the home page
+              className={
+                ({ isActive }) =>
+                  isActive
+                    ? "text-slate-600 font-semibold underline" // Active link style
+                    : "text-slate-600 hover:text-orange-500" // Default style with hover effect
+              }
+            >
+              ContactUs
+            </NavLink>
+          </li>
+
           {isAuthenticated ? (
             <li>
               <LogoutButton />

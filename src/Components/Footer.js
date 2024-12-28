@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container ">
         {/* Logo and Description */}
         <div className=" text-center flex justify-between ">
-          <h1 className="text-2xl font-bold">All Recipe</h1>
+          <h1 className="text-2xl font-bold text-orange-500">All Recipe</h1>
           <div className="flex space-x-6 text-sm">
             <a href="/" className="hover:underline">
               Home
@@ -17,7 +17,7 @@ const Footer = () => {
             <a href="http://localhost:3002/about" className="hover:underline">
               About Us
             </a>
-            <a href="#" className="hover:underline">
+            <a href="/contactus" className="hover:underline">
               Contact
             </a>
           </div>

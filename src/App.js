@@ -7,6 +7,7 @@ import Header from "./Components/Header";
 import Error from "./Components/Error";
 import AboutUs from "./Components/AboutUs";
 import Footer from "./Components/Footer";
+import ContactUs from "./Components/Contact";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/category/:idCategory" element={<CategoryInfo />} />
 
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/contactus" element={<ContactUs />} />
       </Routes>
       <Footer />
     </>
