@@ -85,7 +85,7 @@ const ChefUI = () => {
         <h1 className=" font-bold mb-4 mt-8 text-center text-4xl">
           Achievements
         </h1>
-        <ul className="space-y-4 items-center flex justify-around  mt-6 ">
+        <ul className="space-y-4 items-center flex flex-col   lg:flex-row justify-around  mt-6 ">
           <li className="flex items-center text-gray-800 shadow-lg px-5 py-24 bg-slate-50 rounded-lg hover:scale-105  ">
             <span className="mr-4">🏆</span> Cook 2 foods today ________
           </li>

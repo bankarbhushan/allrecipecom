@@ -5,7 +5,7 @@ import chardimg3 from "../Assets/Images/74494.jpg";
 
 const AboutUs = () => {
   return (
-    <section className="bg-gray-50 *:py-16 w-[80vw] m-auto mt-20">
+    <section className="bg-gray-50 *:py-16 w-[80vw]  m-auto mt-20">
       <div className="container mx-auto px-4 text-center">
         {/* Title */}
         <h1 className="text-4xl font-bold text-orange-500 mb-6">About Us</h1>

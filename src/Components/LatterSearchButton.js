@@ -22,7 +22,7 @@ const LatterSearchButton = ({ setSearchInput }) => {
   }, []);
 
   return (
-    <div className="flex justify-center w-[80vw] gap-2 mb-12">
+    <div className="flex flex-wrap justify-center w-[80vw] md:w-fit gap-2 mb-12">
       {latter.map((category) => (
         <button
           className="px-3 py-2 bg-slate-200 rounded-lg hover:bg-slate-300"

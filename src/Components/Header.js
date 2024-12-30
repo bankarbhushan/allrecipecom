@@ -8,7 +8,7 @@ const Header = () => {
   const { user, isAuthenticated } = useAuth0();
 
   return (
-    <div className="bg-slate-200 shadow-lg">
+    <div className="bg-slate-200 shadow-lg ">
       {/* Main navigation container with maximum width, padding, and spacing */}
       <nav className="max-w-7xl mx-auto p-4 flex items-center justify-between">
         {/* Logo wrapped in a NavLink for navigation to the homepage */}
@@ -21,7 +21,7 @@ const Header = () => {
         </NavLink>
 
         {/* Navigation links list */}
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-6 flex-wrap">
           {/* Home link */}
           <li>
             <NavLink
