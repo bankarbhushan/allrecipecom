@@ -164,11 +164,11 @@ const MealInfo = () => {
 
           {/* Meal Instructions */}
           <div className="text-gray-700 mb-6">
-            <h3 className="text-2xl font-semibold mb-4">Instructions</h3>
-            <p>{mealInfo.strInstructions}</p>
+            <h3 className="text-2xl font-semibold mb-4 ">Instructions</h3>
+            <p className="text-justify">{mealInfo.strInstructions}</p>
           </div>
 
-          <div className="flex justify-around gap-7 ">
+          <div className="flex justify-around gap-7 flex-col md:flex-row ">
             <div className="text-gray-700 mb-6">
               <h3 className="text-2xl font-semibold mb-4">Ingredients</h3>
               <ul className="list-disc pl-6">{renderIngredients()}</ul>
@@ -195,13 +195,13 @@ const MealInfo = () => {
 
           {/* Recipe Source */}
           {mealInfo.strSource && (
-            <div className="text-gray-700 mt-4 w-full md:w-fit">
+            <div className="text-gray-700 mt-4 ">
               <h3 className="text-2xl font-semibold mb-2">Recipe Source</h3>
               <a
                 href={mealInfo.strSource}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 underline hover:text-blue-800"
+                className="text-blue-600 underline hover:text-blue-800   overflow-x-hidden "
               >
                 {mealInfo.strSource}
               </a>

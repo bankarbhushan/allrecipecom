@@ -21,7 +21,7 @@ const Header = () => {
         </NavLink>
 
         {/* Navigation links list */}
-        <ul className="flex space-x-6 flex-wrap">
+        <ul className="flex space-x-6 flex-col justify-between items-end md:flex-row  ">
           {/* Home link */}
           <li>
             <NavLink
